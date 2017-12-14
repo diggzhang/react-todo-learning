@@ -17,7 +17,7 @@ export function TodoList(props) {
           <ul className='todo__list'>
             {todos.map(t => (
                 <li key={t.id} className='todo__item'>
-                  <Todo todo={t}>
+                  <Todo todo={t} />
                 </li>
             ))}
           </ul>
