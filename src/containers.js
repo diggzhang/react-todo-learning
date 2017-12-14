@@ -3,7 +3,7 @@ import * as components from './components';
 import { addTodo, toggleTodo } from './actions';
 
 export const TodoList = connect(
-    function mapStateToProps() {
+    function mapStateToProps(state) {
         return { todos: state }
     },
     function mapDispatchToProps(dispatch) {
